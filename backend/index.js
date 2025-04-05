@@ -14,7 +14,7 @@ dotenv.config();
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const _dirname = path.resolve();
-const buildpath = path.join(_dirname, "frontend", "dist");
+const buildpath = path.join(_dirname,"../frontend/dist")
 app.use(express.static(buildpath));
 app.use(cors({ credentials: true, origin:'http://localhost:5173' }));
 app.use(express.json());
