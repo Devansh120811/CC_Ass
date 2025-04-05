@@ -5,13 +5,9 @@ import dotenv from 'dotenv';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import cookieParser from 'cookie-parser';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
 import path from 'path';
 
 dotenv.config();
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const _dirname = path.resolve();
 const buildpath = path.join(_dirname,"../frontend/dist")
